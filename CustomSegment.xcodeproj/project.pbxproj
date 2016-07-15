@@ -15,6 +15,7 @@
 		8C3AF9751D37FBC900202FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AF9731D37FBC900202FAA /* LaunchScreen.storyboard */; };
 		8C3AF9801D37FBC900202FAA /* CustomSegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF97F1D37FBC900202FAA /* CustomSegmentTests.m */; };
 		8C3AF98B1D37FBC900202FAA /* CustomSegmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF98A1D37FBC900202FAA /* CustomSegmentUITests.m */; };
+		8C3AF99A1D37FC7600202FAA /* JDCustomSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		8C3AF9861D37FBC900202FAA /* CustomSegmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3AF98A1D37FBC900202FAA /* CustomSegmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentUITests.m; sourceTree = "<group>"; };
 		8C3AF98C1D37FBC900202FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C3AF9981D37FC7600202FAA /* JDCustomSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomSegment.h; sourceTree = "<group>"; };
+		8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomSegment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,8 @@
 				8C3AF9691D37FBC900202FAA /* AppDelegate.m */,
 				8C3AF96B1D37FBC900202FAA /* ViewController.h */,
 				8C3AF96C1D37FBC900202FAA /* ViewController.m */,
+				8C3AF9981D37FC7600202FAA /* JDCustomSegment.h */,
+				8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */,
 				8C3AF96E1D37FBC900202FAA /* Main.storyboard */,
 				8C3AF9711D37FBC900202FAA /* Assets.xcassets */,
 				8C3AF9731D37FBC900202FAA /* LaunchScreen.storyboard */,
@@ -207,6 +212,7 @@
 				TargetAttributes = {
 					8C3AF9611D37FBC900202FAA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8FAKRB9BJV;
 					};
 					8C3AF97A1D37FBC900202FAA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -270,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3AF99A1D37FC7600202FAA /* JDCustomSegment.m in Sources */,
 				8C3AF96D1D37FBC900202FAA /* ViewController.m in Sources */,
 				8C3AF96A1D37FBC900202FAA /* AppDelegate.m in Sources */,
 				8C3AF9671D37FBC900202FAA /* main.m in Sources */,
@@ -415,10 +422,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomSegment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JD.CustomSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -426,10 +436,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomSegment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = JD.CustomSegment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -498,6 +511,7 @@
 				8C3AF9911D37FBC900202FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3AF9921D37FBC900202FAA /* Build configuration list for PBXNativeTarget "CustomSegmentTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +520,7 @@
 				8C3AF9941D37FBC900202FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C3AF9951D37FBC900202FAA /* Build configuration list for PBXNativeTarget "CustomSegmentUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +529,7 @@
 				8C3AF9971D37FBC900202FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
