@@ -1,14 +1,12 @@
 # JDSegmentedControl
 Customizable Segment Control
 
-# Usage with storyboards
+# Usage
+
+###via storyboards
 
 Put new `UIView` on your `ViewController` and select `JDCustomControl` class for it.
 
-# With code
-```
--init
--initWithFrame:
--initWithCoder:
--initWithItems:
-```
+###via code
+
+Create new instance, and set colors for `thumbView` and `background`
