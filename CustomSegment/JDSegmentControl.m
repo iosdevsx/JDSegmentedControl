@@ -1,16 +1,16 @@
 //
-//  JDCustomSegment.m
+//  JDSegmentControl.m
 //  CustomSegment
 //
 //  Created by Юрий Логинов on 14.07.16.
 //  Copyright © 2016 Юрий Логинов. All rights reserved.
 //
 
-#import "JDCustomSegment.h"
+#import "JDSegmentControl.h"
 
 //SegmentControl
 
-@interface JDCustomSegment()
+@interface JDSegmentControl()
 
 @property (strong, nonatomic) NSMutableArray <UILabel *> *labels;
 
@@ -20,7 +20,7 @@
 
 IB_DESIGNABLE
 
-@implementation JDCustomSegment
+@implementation JDSegmentControl
 @synthesize items = _items;
 
 
@@ -30,6 +30,7 @@ IB_DESIGNABLE
 {
     self = [super init];
     if (self) {
+        [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JDSegmentControl class]) owner:self options:nil];
         [self setupView];
     }
     return self;
@@ -39,6 +40,7 @@ IB_DESIGNABLE
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JDSegmentControl class]) owner:self options:nil];
         [self setupView];
     }
     return self;

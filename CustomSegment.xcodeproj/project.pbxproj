@@ -15,7 +15,7 @@
 		8C3AF9751D37FBC900202FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C3AF9731D37FBC900202FAA /* LaunchScreen.storyboard */; };
 		8C3AF9801D37FBC900202FAA /* CustomSegmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF97F1D37FBC900202FAA /* CustomSegmentTests.m */; };
 		8C3AF98B1D37FBC900202FAA /* CustomSegmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF98A1D37FBC900202FAA /* CustomSegmentUITests.m */; };
-		8C3AF99A1D37FC7600202FAA /* JDCustomSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */; };
+		8C3AF99A1D37FC7600202FAA /* JDSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C3AF9991D37FC7600202FAA /* JDSegmentControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		8C3AF9861D37FBC900202FAA /* CustomSegmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSegmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C3AF98A1D37FBC900202FAA /* CustomSegmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentUITests.m; sourceTree = "<group>"; };
 		8C3AF98C1D37FBC900202FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C3AF9981D37FC7600202FAA /* JDCustomSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomSegment.h; sourceTree = "<group>"; };
-		8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomSegment.m; sourceTree = "<group>"; };
+		8C3AF9981D37FC7600202FAA /* JDSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDSegmentControl.h; sourceTree = "<group>"; };
+		8C3AF9991D37FC7600202FAA /* JDSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDSegmentControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +108,7 @@
 				8C3AF9691D37FBC900202FAA /* AppDelegate.m */,
 				8C3AF96B1D37FBC900202FAA /* ViewController.h */,
 				8C3AF96C1D37FBC900202FAA /* ViewController.m */,
-				8C3AF9981D37FC7600202FAA /* JDCustomSegment.h */,
-				8C3AF9991D37FC7600202FAA /* JDCustomSegment.m */,
+				8C3AF99B1D3954CD00202FAA /* JDSegmentControl */,
 				8C3AF96E1D37FBC900202FAA /* Main.storyboard */,
 				8C3AF9711D37FBC900202FAA /* Assets.xcassets */,
 				8C3AF9731D37FBC900202FAA /* LaunchScreen.storyboard */,
@@ -143,6 +142,15 @@
 				8C3AF98C1D37FBC900202FAA /* Info.plist */,
 			);
 			path = CustomSegmentUITests;
+			sourceTree = "<group>";
+		};
+		8C3AF99B1D3954CD00202FAA /* JDSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				8C3AF9981D37FC7600202FAA /* JDSegmentControl.h */,
+				8C3AF9991D37FC7600202FAA /* JDSegmentControl.m */,
+			);
+			name = JDSegmentControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C3AF99A1D37FC7600202FAA /* JDCustomSegment.m in Sources */,
+				8C3AF99A1D37FC7600202FAA /* JDSegmentControl.m in Sources */,
 				8C3AF96D1D37FBC900202FAA /* ViewController.m in Sources */,
 				8C3AF96A1D37FBC900202FAA /* AppDelegate.m in Sources */,
 				8C3AF9671D37FBC900202FAA /* main.m in Sources */,

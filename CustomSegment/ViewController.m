@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "JDCustomSegment.h"
+#import "JDSegmentControl.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet JDCustomSegment *segmentControl;
+@property (weak, nonatomic) IBOutlet JDSegmentControl *segmentControl;
 @property (weak, nonatomic) IBOutlet UILabel *segmentLabel;
 
 @end

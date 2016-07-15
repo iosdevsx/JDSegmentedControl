@@ -1,5 +1,5 @@
 //
-//  JDCustomSegment.h
+//  JDSegmentControl.h
 //  CustomSegment
 //
 //  Created by Юрий Логинов on 14.07.16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JDCustomSegment : UIControl
+@interface JDSegmentControl : UIControl
 
 @property (strong, nonatomic) NSArray <NSString *> *items;
 @property (assign, nonatomic) NSUInteger selectedIndex;
