@@ -30,7 +30,6 @@ IB_DESIGNABLE
 {
     self = [super init];
     if (self) {
-        [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JDSegmentControl class]) owner:self options:nil];
         [self setupView];
     }
     return self;
@@ -40,7 +39,6 @@ IB_DESIGNABLE
 {
     self = [super initWithFrame:frame];
     if (self) {
-        [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([JDSegmentControl class]) owner:self options:nil];
         [self setupView];
     }
     return self;
